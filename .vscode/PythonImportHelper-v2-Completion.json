@@ -40,6 +40,30 @@
         "documentation": {}
     },
     {
+        "label": "Cadastro",
+        "importPath": "base.models",
+        "description": "base.models",
+        "isExtraImport": true,
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cadastro",
+        "importPath": "base.models",
+        "description": "base.models",
+        "isExtraImport": true,
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cadastro",
+        "importPath": "base.models",
+        "description": "base.models",
+        "isExtraImport": true,
+        "detail": "base.models",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -62,22 +86,6 @@
         "description": "django",
         "isExtraImport": true,
         "detail": "django",
-        "documentation": {}
-    },
-    {
-        "label": "Cadastro",
-        "importPath": "base.models",
-        "description": "base.models",
-        "isExtraImport": true,
-        "detail": "base.models",
-        "documentation": {}
-    },
-    {
-        "label": "Cadastro",
-        "importPath": "base.models",
-        "description": "base.models",
-        "isExtraImport": true,
-        "detail": "base.models",
         "documentation": {}
     },
     {
@@ -188,11 +196,20 @@
         "documentation": {}
     },
     {
+        "label": "CadastroAdmin",
+        "kind": 6,
+        "importPath": "base.admin",
+        "description": "base.admin",
+        "peekOfCode": "class CadastroAdmin(admin.ModelAdmin):\n    list_display = ['nome','email','data']\n    search_fields = ['nome','email']\n    list_filter = ['data']",
+        "detail": "base.admin",
+        "documentation": {}
+    },
+    {
         "label": "BaseConfig",
         "kind": 6,
         "importPath": "base.apps",
         "description": "base.apps",
-        "peekOfCode": "class BaseConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'base'",
+        "peekOfCode": "class BaseConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    verbose_name = 'Módulo Geral'\n    name = 'base'",
         "detail": "base.apps",
         "documentation": {}
     },
@@ -201,7 +218,7 @@
         "kind": 6,
         "importPath": "base.forms",
         "description": "base.forms",
-        "peekOfCode": "class CadastroForm(forms.ModelForm):\n    class Meta:\n        model = Cadastro\n        fields = ['nome','email','senha']",
+        "peekOfCode": "class CadastroForm(forms.ModelForm):\n    class Meta:\n        model = Cadastro\n        fields = ['nome','email','senha']\n        widgets = {'senha':forms.PasswordInput()}",
         "detail": "base.forms",
         "documentation": {}
     },
@@ -210,7 +227,7 @@
         "kind": 6,
         "importPath": "base.models",
         "description": "base.models",
-        "peekOfCode": "class Cadastro(models.Model):\n    nome = models.CharField(max_length=50)\n    email = models.EmailField(max_length=75)\n    senha = models.CharField(max_length=50)\n    data = models.DateTimeField(auto_now_add= True)",
+        "peekOfCode": "class Cadastro(models.Model):\n    nome = models.CharField(max_length=50)\n    email = models.EmailField(max_length=75)\n    senha = models.CharField(max_length=50)\n    data = models.DateTimeField(auto_now_add= True)\n    def __str__(self) :\n        return f'{self.nome} [{self.email}]'\n    class Meta:\n        verbose_name = 'Formulário de contato'\n        verbose_name_plural = 'Formulários de contatos'",
         "detail": "base.models",
         "documentation": {}
     },
