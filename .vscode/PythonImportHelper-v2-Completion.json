@@ -16,11 +16,83 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -72,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "django",
         "kind": 6,
         "isExtraImport": true,
@@ -89,11 +169,35 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
         "documentation": {}
     },
     {
@@ -121,6 +225,62 @@
         "documentation": {}
     },
     {
+        "label": "Curso",
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "isExtraImport": true,
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
+        "label": "Curso",
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "isExtraImport": true,
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "criar_curso",
+        "importPath": "cursos.views",
+        "description": "cursos.views",
+        "isExtraImport": true,
+        "detail": "cursos.views",
+        "documentation": {}
+    },
+    {
+        "label": "CursoForm",
+        "importPath": "cursos.forms",
+        "description": "cursos.forms",
+        "isExtraImport": true,
+        "detail": "cursos.forms",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -143,14 +303,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -193,6 +345,15 @@
         "description": "base.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cadastro',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('nome', models.CharField(max_length=50)),",
         "detail": "base.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "base.migrations.0002_alter_cadastro_options",
+        "description": "base.migrations.0002_alter_cadastro_options",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('base', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='cadastro',\n            options={'ordering': ['-data'], 'verbose_name': 'Formulário de contato', 'verbose_name_plural': 'Formulários de contatos'},\n        ),\n    ]",
+        "detail": "base.migrations.0002_alter_cadastro_options",
         "documentation": {}
     },
     {
@@ -250,6 +411,96 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cursos.migrations.0001_initial",
+        "description": "cursos.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Curso',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('titulo', models.CharField(max_length=50)),",
+        "detail": "cursos.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cursos.migrations.0002_alter_curso_nivel",
+        "description": "cursos.migrations.0002_alter_curso_nivel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('cursos', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='curso',\n            name='nivel',\n            field=models.CharField(choices=[('Iniciante', 'Iniciante'), ('Intermediário', 'Intermediário'), ('Avançado', 'Avançado')], max_length=50),\n        ),",
+        "detail": "cursos.migrations.0002_alter_curso_nivel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "cursos.migrations.0003_alter_curso_data_do_curso",
+        "description": "cursos.migrations.0003_alter_curso_data_do_curso",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('cursos', '0002_alter_curso_nivel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='curso',\n            name='data_do_curso',\n            field=models.DateField(help_text='aaaa-mm-dd'),\n        ),",
+        "detail": "cursos.migrations.0003_alter_curso_data_do_curso",
+        "documentation": {}
+    },
+    {
+        "label": "CursoAdmin",
+        "kind": 6,
+        "importPath": "cursos.admin",
+        "description": "cursos.admin",
+        "peekOfCode": "class CursoAdmin(admin.ModelAdmin):\n    list_display = ['titulo','nivel','carga_horaria','data_do_curso'] #quais campos exibir\n    search_fields = ['titulo','nivel'] #quais campos pesquisar\n    list_filter = ['data_do_curso'] #filtros",
+        "detail": "cursos.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CursosConfig",
+        "kind": 6,
+        "importPath": "cursos.apps",
+        "description": "cursos.apps",
+        "peekOfCode": "class CursosConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'cursos'",
+        "detail": "cursos.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CursoForm",
+        "kind": 6,
+        "importPath": "cursos.forms",
+        "description": "cursos.forms",
+        "peekOfCode": "class CursoForm(forms.ModelForm):\n    class Meta:\n        model = Curso\n        fields = ['titulo','nivel','carga_horaria','data_do_curso','descricao']",
+        "detail": "cursos.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Curso",
+        "kind": 6,
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "peekOfCode": "class Curso(models.Model):\n    # Definição do níveis de curso \n    niveis_de_curso = (\n        ('Iniciante','Iniciante'),\n        ('Intermediário','Intermediário'),\n        ('Avançado','Avançado'))\n    titulo = models.CharField(max_length = 50)\n    nivel =models.CharField(max_length = 50, choices=niveis_de_curso)\n    carga_horaria =models.IntegerField()\n    data_do_curso = models.DateField(help_text='aaaa-mm-dd')",
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "cursos.urls",
+        "description": "cursos.urls",
+        "peekOfCode": "app_name = 'Cursos'\nurlpatterns = [\n    path('criar_curso/',criar_curso, name='criar_curso'),\n]",
+        "detail": "cursos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "cursos.urls",
+        "description": "cursos.urls",
+        "peekOfCode": "urlpatterns = [\n    path('criar_curso/',criar_curso, name='criar_curso'),\n]",
+        "detail": "cursos.urls",
+        "documentation": {}
+    },
+    {
+        "label": "criar_curso",
+        "kind": 2,
+        "importPath": "cursos.views",
+        "description": "cursos.views",
+        "peekOfCode": "def criar_curso(request):\n    form = CursoForm(request.POST or None)\n    sucesso = False\n    if form.is_valid():\n        form.save()\n        sucesso = True\n    contexto = {\n        'form':form,\n        'sucesso':sucesso,\n    }",
+        "detail": "cursos.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "gerenciador_cursos.asgi",
@@ -299,7 +550,7 @@
         "kind": 5,
         "importPath": "gerenciador_cursos.settings",
         "description": "gerenciador_cursos.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'base',\n    'bootstrap5',\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'base',\n    'bootstrap5',\n    'cursos',",
         "detail": "gerenciador_cursos.settings",
         "documentation": {}
     },
@@ -416,7 +667,7 @@
         "kind": 5,
         "importPath": "gerenciador_cursos.urls",
         "description": "gerenciador_cursos.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',inicio), #deixar vazio vira o caminho raiz\n    path('cadastro/',cadastro)\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',inicio), #deixar vazio vira o caminho raiz\n    path('cadastro/',cadastro),\n    path('curso/', include('cursos.urls',namespace='cursos')) #adicionar url para criar_curso\n]",
         "detail": "gerenciador_cursos.urls",
         "documentation": {}
     },
