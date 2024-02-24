@@ -241,6 +241,22 @@
         "documentation": {}
     },
     {
+        "label": "Curso",
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "isExtraImport": true,
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -278,6 +294,14 @@
         "description": "cursos.forms",
         "isExtraImport": true,
         "detail": "cursos.forms",
+        "documentation": {}
+    },
+    {
+        "label": "cache_page",
+        "importPath": "django.views.decorators.cache",
+        "description": "django.views.decorators.cache",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.cache",
         "documentation": {}
     },
     {
@@ -460,7 +484,7 @@
         "kind": 6,
         "importPath": "cursos.forms",
         "description": "cursos.forms",
-        "peekOfCode": "class CursoForm(forms.ModelForm):\n    class Meta:\n        model = Curso\n        fields = ['titulo','nivel','carga_horaria','data_do_curso','descricao']",
+        "peekOfCode": "class CursoForm(forms.ModelForm):\n    def clean_data_do_curso(self):\n        data_do_curso = self.cleaned_data['data_do_curso']\n        hoje = date.today()\n        if data_do_curso<hoje:\n            raise forms.ValidationError('Não é possível cadastrar um curso no PASSADO!')\n        return data_do_curso\n    class Meta:\n        model = Curso\n        fields = ['titulo','nivel','carga_horaria','data_do_curso','descricao']",
         "detail": "cursos.forms",
         "documentation": {}
     },
@@ -496,7 +520,7 @@
         "kind": 2,
         "importPath": "cursos.views",
         "description": "cursos.views",
-        "peekOfCode": "def criar_curso(request):\n    form = CursoForm(request.POST or None)\n    sucesso = False\n    if form.is_valid():\n        form.save()\n        sucesso = True\n    contexto = {\n        'form':form,\n        'sucesso':sucesso,\n    }",
+        "peekOfCode": "def criar_curso(request):\n    cursos = Curso.objects.all()\n    form = CursoForm(request.POST or None)\n    sucesso = False\n    if form.is_valid():\n        form.save()\n        sucesso = True\n    contexto = {\n        'form':form,\n        'sucesso':sucesso,",
         "detail": "cursos.views",
         "documentation": {}
     },

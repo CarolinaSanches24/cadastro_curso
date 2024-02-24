@@ -8,4 +8,28 @@
   {% csrf_token %} {% bootstrap_form form %}
   <button type="submit" class="btn btn-primary btn-block">Inserir Curso</button>
 </form>
+<br />
+<table class="table">
+  <caption>
+    Cursos cadastrados
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome do Curso</th>
+      <th scope="col">Carga Horaria</th>
+      <th scope="col">Nível</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for curso in cursos%}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ curso.titulo }}</td>
+      <td>{{ curso.carga_horaria }}</td>
+      <td>{{ curso.nivel }}</td>
+    </tr>
+    {%endfor%}
+  </tbody>
+</table>
 {%endif%} {% endblock %}

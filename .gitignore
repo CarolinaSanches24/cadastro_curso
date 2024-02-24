@@ -4,3 +4,4 @@ Scripts/
 db.sqlite3
 manage.py
 pyvenv.cfg
+.vscode/
