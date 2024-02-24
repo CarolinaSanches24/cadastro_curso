@@ -88,6 +88,22 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -133,6 +149,14 @@
         "description": "base.models",
         "isExtraImport": true,
         "detail": "base.models",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -193,6 +217,22 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -249,6 +289,22 @@
         "documentation": {}
     },
     {
+        "label": "Curso",
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "isExtraImport": true,
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
+        "label": "Curso",
+        "importPath": "cursos.models",
+        "description": "cursos.models",
+        "isExtraImport": true,
+        "detail": "cursos.models",
+        "documentation": {}
+    },
+    {
         "label": "date",
         "importPath": "datetime",
         "description": "datetime",
@@ -274,6 +330,14 @@
     },
     {
         "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -351,6 +415,70 @@
         "description": "django.core.wsgi",
         "isExtraImport": true,
         "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "ModelSerializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CursoModelViewSet",
+        "importPath": "rest_api.views",
+        "description": "rest_api.views",
+        "isExtraImport": true,
+        "detail": "rest_api.views",
+        "documentation": {}
+    },
+    {
+        "label": "hello_world",
+        "importPath": "rest_api.views",
+        "description": "rest_api.views",
+        "isExtraImport": true,
+        "detail": "rest_api.views",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
+        "isExtraImport": true,
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "ModelViewSet",
+        "importPath": "rest_framework.viewsets",
+        "description": "rest_framework.viewsets",
+        "isExtraImport": true,
+        "detail": "rest_framework.viewsets",
+        "documentation": {}
+    },
+    {
+        "label": "CursoModelSerializer",
+        "importPath": "rest_api.serializers",
+        "description": "rest_api.serializers",
+        "isExtraImport": true,
+        "detail": "rest_api.serializers",
         "documentation": {}
     },
     {
@@ -691,7 +819,7 @@
         "kind": 5,
         "importPath": "gerenciador_cursos.urls",
         "description": "gerenciador_cursos.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',inicio), #deixar vazio vira o caminho raiz\n    path('cadastro/',cadastro),\n    path('curso/', include('cursos.urls',namespace='cursos')) #adicionar url para criar_curso\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',inicio), #deixar vazio vira o caminho raiz\n    path('cadastro/',cadastro),\n    path('curso/', include('cursos.urls',namespace='cursos')), #adicionar url para criar_curso\n    path('api-auth/', include('rest_framework.urls')),\n    path('api/',include('rest_api.urls', namespace='api')),\n]",
         "detail": "gerenciador_cursos.urls",
         "documentation": {}
     },
@@ -702,6 +830,69 @@
         "description": "gerenciador_cursos.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "gerenciador_cursos.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "RestApiConfig",
+        "kind": 6,
+        "importPath": "rest_api.apps",
+        "description": "rest_api.apps",
+        "peekOfCode": "class RestApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'rest_api'",
+        "detail": "rest_api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CursoModelSerializer",
+        "kind": 6,
+        "importPath": "rest_api.serializers",
+        "description": "rest_api.serializers",
+        "peekOfCode": "class CursoModelSerializer(ModelSerializer):\n    class Meta:\n        model = Curso\n        fields ='__all__'",
+        "detail": "rest_api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "rest_api.urls",
+        "description": "rest_api.urls",
+        "peekOfCode": "app_name = 'rest_api'\nrouter = SimpleRouter(trailing_slash=False) \nrouter.register('curso',CursoModelViewSet)\nurlpatterns = [ #lista urls\n    path('hello_world',hello_world, name='hello_world_api')\n]\nurlpatterns+=router.urls",
+        "detail": "rest_api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "rest_api.urls",
+        "description": "rest_api.urls",
+        "peekOfCode": "router = SimpleRouter(trailing_slash=False) \nrouter.register('curso',CursoModelViewSet)\nurlpatterns = [ #lista urls\n    path('hello_world',hello_world, name='hello_world_api')\n]\nurlpatterns+=router.urls",
+        "detail": "rest_api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "rest_api.urls",
+        "description": "rest_api.urls",
+        "peekOfCode": "urlpatterns = [ #lista urls\n    path('hello_world',hello_world, name='hello_world_api')\n]\nurlpatterns+=router.urls",
+        "detail": "rest_api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CursoModelViewSet",
+        "kind": 6,
+        "importPath": "rest_api.views",
+        "description": "rest_api.views",
+        "peekOfCode": "class CursoModelViewSet(ModelViewSet):\n    queryset = Curso.objects.all()\n    serializer_class = CursoModelSerializer",
+        "detail": "rest_api.views",
+        "documentation": {}
+    },
+    {
+        "label": "hello_world",
+        "kind": 2,
+        "importPath": "rest_api.views",
+        "description": "rest_api.views",
+        "peekOfCode": "def hello_world(request):\n    if request.method =='POST':\n        return Response({'message':f'Hello,{request.data.get(\"name\")}'})\n    return Response({'hello':'World API'})\nclass CursoModelViewSet(ModelViewSet):\n    queryset = Curso.objects.all()\n    serializer_class = CursoModelSerializer",
+        "detail": "rest_api.views",
         "documentation": {}
     },
     {

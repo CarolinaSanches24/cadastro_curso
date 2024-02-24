@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',inicio), #deixar vazio vira o caminho raiz
     path('cadastro/',cadastro),
-    path('curso/', include('cursos.urls',namespace='cursos')) #adicionar url para criar_curso
+    path('curso/', include('cursos.urls',namespace='cursos')), #adicionar url para criar_curso
+    path('api-auth/', include('rest_framework.urls')),
+    path('api/',include('rest_api.urls', namespace='api')),
 ]
